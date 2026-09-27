@@ -1,0 +1,67 @@
+BLANK CUT COMMAND-LINE INTERFACE LICENSE
+
+Copyright (c) 2026 Blank Cut Inc. All rights reserved.
+
+This license governs your use of the `blankcut` command-line interface software, including any
+updates, documentation, and scripts distributed with it (the "Software"). By installing or using the
+Software you agree to these terms. If you do not agree, do not install or use it.
+
+1. License grant. Subject to these terms, Blank Cut Inc. ("Blank Cut") grants you
+   a limited, non-exclusive, non-transferable, non-sublicensable, revocable license to install and
+   run the Software, in object-code form, on computers and build systems you control, solely to
+   access and use Blank Cut services under an account in good standing.
+
+2. Restrictions. Except as expressly permitted by this license or by applicable law that cannot
+   be waived, you may not: (a) copy, distribute, sell, rent, lease, sublicense, or otherwise make the
+   Software available to third parties, other than installing it from an official Blank Cut
+   distribution channel; (b) modify, adapt, or create derivative works of the Software;
+   (c) decompile, disassemble, or reverse engineer the Software; (d) remove or alter any proprietary
+   notices; (e) use the Software to circumvent, disable, or interfere with any security, rate-limit,
+   access-control, or billing feature of Blank Cut services; or (f) use the Software to access Blank
+   Cut services other than through an account you are authorized to use.
+
+3. Services. The Software is a client for Blank Cut's hosted services. Your use of those
+   services, including your account, the projects you deploy, and any fees, is governed by the Blank
+   Cut Terms of Service at https://blankcut.com/terms (the "Terms"). If this license and the Terms
+   conflict about the services, the Terms control.
+
+4. Data. The Software sends the information needed to carry out the commands you run to Blank
+   Cut services — for example your API key, repository URLs, configuration, and secret values you
+   choose to upload — and identifies its version to those services. It stores your API key and
+   service endpoint locally in a file readable only by your user account. Blank Cut's handling of
+   that information is described in https://blankcut.com/privacy.
+
+5. Ownership. The Software is licensed, not sold. Blank Cut and its licensors retain all right,
+   title, and interest in the Software, including all intellectual property rights. No rights are
+   granted except as expressly stated in this license.
+
+6. Third-party components. The Software includes open-source components licensed under their
+   own terms, which are reproduced in the accompanying `THIRD_PARTY_NOTICES.md` file. Nothing in this
+   license limits your rights under those licenses for those components.
+
+7. Updates. Blank Cut may release updates. Some features may require a current version, and
+   Blank Cut services may decline requests from versions that are no longer supported.
+
+8. Termination. This license ends automatically if you breach it or when your right to use
+   Blank Cut services ends. Blank Cut may also terminate it on notice. On termination you must stop
+   using the Software and delete all copies. Sections 2 and 5 through 12 survive termination.
+
+9. Disclaimer of warranties. TO THE MAXIMUM EXTENT PERMITTED BY LAW, THE SOFTWARE IS PROVIDED
+   "AS IS" AND "AS AVAILABLE", WITHOUT WARRANTY OF ANY KIND, EXPRESS, IMPLIED, OR STATUTORY,
+   INCLUDING ANY WARRANTY OF MERCHANTABILITY, FITNESS FOR A PARTICULAR PURPOSE, TITLE, OR
+   NON-INFRINGEMENT, AND ANY WARRANTY THAT THE SOFTWARE WILL BE UNINTERRUPTED OR ERROR-FREE.
+
+10. Limitation of liability. TO THE MAXIMUM EXTENT PERMITTED BY LAW, BLANK CUT AND ITS LICENSORS
+    WILL NOT BE LIABLE FOR ANY INDIRECT, INCIDENTAL, SPECIAL, CONSEQUENTIAL, OR PUNITIVE DAMAGES, OR
+    ANY LOSS OF PROFITS, REVENUE, DATA, OR GOODWILL, ARISING OUT OF OR RELATED TO THE SOFTWARE, EVEN IF
+    ADVISED OF THE POSSIBILITY OF SUCH DAMAGES. BLANK CUT'S TOTAL LIABILITY ARISING OUT OF OR RELATED
+    TO THE SOFTWARE WILL NOT EXCEED ONE HUNDRED U.S. DOLLARS (US $100). The Software is provided free
+    of charge; any liability relating to paid services is governed by the Terms.
+
+11. General. This license is governed by the laws of the State of Delaware, United States,
+    excluding its conflict-of-laws rules. You must comply with all applicable export-control and sanctions laws when using the
+    Software. You may not assign this license without Blank Cut's written consent. If any provision
+    is held unenforceable, the rest remains in effect. This license, together with the Terms, is the
+    entire agreement about the Software.
+
+12. Contact. office@blankcut.com
