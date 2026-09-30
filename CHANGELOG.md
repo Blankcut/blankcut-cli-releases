@@ -22,6 +22,14 @@ so keep the heading bare regardless.
 
 ## Unreleased
 
+## v0.19.1 — 2026-09-30
+
+- `blankcut sync` writes the same CLAUDE.md block the platform now distributes: install
+  instructions that need no GitHub login (the public installer or Homebrew). v0.19.0 carried the
+  previous text, so running `sync` with it rolled a platform-refreshed repo back to the old
+  instructions, and `sync --check` reported those repos as out of date. Run `blankcut upgrade`,
+  then `blankcut sync`.
+
 ## v0.19.0
 
 *Released 2026-09-27.*
