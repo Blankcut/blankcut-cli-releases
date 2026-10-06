@@ -22,6 +22,17 @@ so keep the heading bare regardless.
 
 ## Unreleased
 
+## v0.20.0
+
+*Released 2026-10-05.*
+
+- `blankcut scan` lists your app's image vulnerabilities -- every finding with a
+  published fix, grouped by the package upgrade that clears it, split into OS
+  packages (move the base image) and app dependencies (bump the lockfile), for
+  both the last build and the images running now. JSON when piped, so a coding
+  agent can read it and make the upgrades. Waivers and help from the Blank Cut
+  team are requested from the app's Security panel in Meerkat.
+
 ## v0.19.1 — 2026-09-30
 
 - `blankcut sync` writes the same CLAUDE.md block the platform now distributes: install
