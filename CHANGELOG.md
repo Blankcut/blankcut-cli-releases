@@ -22,6 +22,18 @@ so keep the heading bare regardless.
 
 ## Unreleased
 
+## v0.21.0
+
+*Released 2026-10-14.*
+
+- `blankcut scan waive --vuln <id> --pkg <pkg> --reason "..."` asks the Blank Cut team to waive a
+  scan finding you cannot fix yet -- one vulnerability in one package, exactly as `blankcut scan`
+  reports it. Coding agents can file these too. Nothing changes until the team approves it, and the
+  team is notified. `blankcut scan waivers` lists the app's waivers and where each one stands.
+- Blank Cut team: after `blankcut login` into the platform organization, `blankcut scan waivers
+  --pending` is the review queue across apps, `blankcut scan waivers approve|reject|revoke <id>`
+  decides one, and `blankcut scan waive ... --approve` waives in one step.
+
 ## v0.20.1
 
 *Released 2026-10-14.*
