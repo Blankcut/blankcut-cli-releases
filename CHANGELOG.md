@@ -22,6 +22,16 @@ so keep the heading bare regardless.
 
 ## Unreleased
 
+## v0.20.1
+
+*Released 2026-10-14.*
+
+- `blankcut scan` names one version to upgrade each package to -- the lowest fix on
+  the release line you are on that clears every finding in the package -- instead of
+  the scanner's full list of fixed releases across every line (which read like
+  `5.0.7, 1.1.16, 2.1.2 | 5.0.8, 3.0.3, ...`). The Meerkat Security panel shows the
+  same version. `--json` still carries the full lists.
+
 ## v0.20.0
 
 *Released 2026-10-05.*
