@@ -22,6 +22,15 @@ so keep the heading bare regardless.
 
 ## Unreleased
 
+## v0.22.1
+
+*Released 2026-10-14.*
+
+- `blankcut scan waivers approve|reject|revoke` now records the decision on the waiver's review ticket
+  in Meerkat, resolves it, and tells the person who asked -- as a decision made in Meerkat always did.
+- `blankcut scan waive` / `scan waivers` print the server's reason on a refusal without the flag list
+  under it, and `--json` output includes `requestedVia`.
+
 ## v0.22.0
 
 *Released 2026-10-14.*
