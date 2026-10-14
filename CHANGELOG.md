@@ -22,6 +22,14 @@ so keep the heading bare regardless.
 
 ## Unreleased
 
+## v0.22.0
+
+*Released 2026-10-14.*
+
+- The CLI now defaults to the Meerkat API at `https://api.blankcut.com`. `blankcut configure`
+  needs only `--api-key`, and in CI `BLANKCUT_API_KEY` alone is enough (`BLANKCUT_ENDPOINT` is
+  optional). Existing configs that name `https://agent.blankcut.com` keep working unchanged.
+
 ## v0.21.0
 
 *Released 2026-10-14.*
