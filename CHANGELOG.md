@@ -22,6 +22,22 @@ so keep the heading bare regardless.
 
 ## Unreleased
 
+## v0.23.0
+
+*Released 2026-10-17.*
+
+- `blankcut domains` buys, moves and connects custom domains. `search <name>` shows availability and
+  the yearly price; `buy <domain> --app <app>` registers one at cost on your organization's card,
+  showing the price and asking first; `transfer check|dns|start` moves a domain you own elsewhere,
+  copying its DNS over first so the site and email keep working. A domain is attached to its app
+  automatically once its certificate is issued -- `attach` / `detach` switch it (`attach` also
+  connects a domain registered somewhere else) and `status` shows how far along it is.
+- `blankcut domains records` lists, sets and removes DNS records for domains Blank Cut hosts.
+  `auto-renew on|off`, `release` (prints the transfer code to move a domain to another registrar),
+  `verify-email` and `contact set` (the registrant, needed before a first purchase) manage the
+  registration. Buying, transferring, releasing, auto-renew and the contact need the organization
+  owner's key.
+
 ## v0.22.2
 
 *Released 2026-10-17.*
