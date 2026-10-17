@@ -22,6 +22,12 @@ so keep the heading bare regardless.
 
 ## Unreleased
 
+## v0.22.2
+
+*Released 2026-10-17.*
+
+- `blankcut promote --app` now preserves a registered monorepo app’s identity and rebuilds only its configured image through the build broker. Run from a clean checkout matching the repository’s current `main`; `--dry-run` shows the exact image and Dockerfile. Unknown or ambiguous image mappings and infrastructure overrides are refused before a build starts. Existing ingress, secrets, and other community images stay in place. The build uses the workflow’s existing `APP_NAME` broker identity, which may differ from both the community app and its image.
+
 ## v0.22.1
 
 *Released 2026-10-14.*
