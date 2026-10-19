@@ -22,6 +22,16 @@ so keep the heading bare regardless.
 
 ## Unreleased
 
+## v0.23.1
+
+*Released 2026-10-18.*
+
+- `blankcut domains release` no longer unlocks a domain or prints its transfer code: moving a domain
+  to another registrar is done in Meerkat by a signed-in owner (Domains → the domain → Transfer out),
+  and the command now says so. A transfer code is all another registrar needs to take a domain, so
+  it isn't handed to a terminal, an agent or a CI job. Buying, transferring in, attaching and DNS
+  records are unchanged.
+
 ## v0.23.0
 
 *Released 2026-10-17.*
