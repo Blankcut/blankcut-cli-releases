@@ -22,6 +22,14 @@ so keep the heading bare regardless.
 
 ## Unreleased
 
+## v0.23.3
+
+*Released 2026-10-20.*
+
+- `blankcut validate` no longer requires a `docs/` directory or a `tsconfig.json`. Nothing that
+  builds, deploys or runs your app reads either file, so a working app no longer fails for lacking
+  them. Every check left is something the platform depends on.
+
 ## v0.23.2
 
 *Released 2026-10-20.*
