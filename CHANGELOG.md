@@ -22,6 +22,19 @@ so keep the heading bare regardless.
 
 ## Unreleased
 
+## v0.23.2
+
+*Released 2026-10-20.*
+
+- `blankcut validate` no longer fails Python and Go repos for having no `tsconfig.json`: that
+  check now applies to Node projects only, so `validate --fix` stops adding a `tsconfig.json` to
+  repos that don't use TypeScript.
+- Help text matches what the commands do. `onboard` says its setup PR carries the platform layout
+  and that the build workflow comes with the first `promote`; `provision` says Redis on Rough Cut
+  is a paid add-on rather than unavailable; `context image` says it reports the image the app runs
+  from and whether it is pinned by digest.
+- `blankcut domains release` prints its one sentence without the flag list under it.
+
 ## v0.23.1
 
 *Released 2026-10-18.*
