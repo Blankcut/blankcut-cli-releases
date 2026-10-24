@@ -22,6 +22,15 @@ so keep the heading bare regardless.
 
 ## Unreleased
 
+## v0.23.5
+
+*Released 2026-10-24.*
+
+- The `Dockerfile` that `blankcut init` scaffolds now refreshes its OS packages whenever Alpine
+  publishes fixes. Before, the build cache reused the `apk upgrade` step from the first build, so
+  fixes Alpine had already published kept showing up as findings. One line fixes an existing
+  Dockerfile, and the scaffolded `CLAUDE.md` says which; run `blankcut sync` to pick that up.
+
 ## v0.23.4
 
 *Released 2026-10-24.*
