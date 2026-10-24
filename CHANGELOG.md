@@ -22,6 +22,18 @@ so keep the heading bare regardless.
 
 ## Unreleased
 
+## v0.23.4
+
+*Released 2026-10-24.*
+
+- Errors print once. A refused request used to print its message, the command's whole flag list,
+  then the message again; now it prints the message alone. A mistyped command, flag or argument
+  says `Run 'blankcut <command> --help' for usage.` instead of printing the flag list.
+- The company is written **Blank Cut** everywhere the CLI speaks: `--help`, the installer's
+  Homebrew description, and the `CLAUDE.md` and `README.md` it scaffolds. The command is still
+  `blankcut`, and nothing about how any command behaves changed. Run `blankcut sync` in a repo to
+  pick up the new `CLAUDE.md` wording.
+
 ## v0.23.3
 
 *Released 2026-10-20.*
