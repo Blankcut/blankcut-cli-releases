@@ -22,6 +22,14 @@ so keep the heading bare regardless.
 
 ## Unreleased
 
+## v0.23.6
+
+*Released 2026-10-24.*
+
+- `blankcut promote --repo` on a repo Blank Cut hasn't registered yet now tells you to run
+  `blankcut onboard` first, instead of only answering "not authorized". `promote` deploys apps that
+  are already registered; `onboard` is what registers a new one.
+
 ## v0.23.5
 
 *Released 2026-10-24.*
