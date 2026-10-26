@@ -22,6 +22,15 @@ so keep the heading bare regardless.
 
 ## Unreleased
 
+## v0.23.7
+
+*Released 2026-10-26.*
+
+- A static site scaffolded by `blankcut init` no longer ships a known HIGH in its file server. The
+  scaffolded `Dockerfile` installs `serve` with `compression` 1.8.2 instead of the 1.8.1 that serve
+  pins, which leaked a zlib stream when a client disconnected mid-response. If your repo's
+  `Dockerfile` still has `npm install -g serve@14`, copy the new `serve` lines from a fresh scaffold.
+
 ## v0.23.6
 
 *Released 2026-10-24.*
