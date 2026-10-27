@@ -22,6 +22,20 @@ so keep the heading bare regardless.
 
 ## Unreleased
 
+## v0.24.0
+
+*Released 2026-10-26.*
+
+- **`blankcut whoami`** shows which organization this CLI is signed in to. Every command acts for
+  that organization: its projects, including ones created after you signed in, and its plan for
+  billing. To act for another organization, run `blankcut login` again and choose it.
+- `blankcut promote` no longer offers `--tenant`, `--billing`, `--operator` or `--ssm-path`. Which
+  organization a project belongs to, how it is billed and where its secrets live all come from
+  your account, and the service now refuses those flags from a customer key.
+- Blank Cut admins: `blankcut onboard --org <tenant>` onboards a repo for a client organization.
+  Signed in to `blank-cut` as an admin, your key now reaches every organization's projects, which
+  `blankcut whoami` confirms. It is checked live against your admin role.
+
 ## v0.23.7
 
 *Released 2026-10-26.*
