@@ -22,6 +22,15 @@ so keep the heading bare regardless.
 
 ## Unreleased
 
+## v0.26.0
+
+*Released 2026-10-28.*
+
+- If you are removed from an organization, the CLI keys you hold for it stop working straight
+  away, and the CLI says that is why. An owner can invite you back; then run `blankcut login`.
+- Blank Cut admins: the key `blankcut login` gives you lasts 24 hours. When it runs out, the CLI
+  offers to sign you in again on the spot, and `blankcut whoami` shows when it expires.
+
 ## v0.25.1
 
 *Released 2026-10-28.*
