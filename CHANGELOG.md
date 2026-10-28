@@ -22,6 +22,15 @@ so keep the heading bare regardless.
 
 ## Unreleased
 
+## v0.27.0
+
+*Released 2026-10-28.*
+
+- **`blankcut scan` shows a fix-by date for each package.** A critical or high finding gets one
+  three days after the platform first sees it. A build that adds a finding still stops at once in
+  block mode; one that was already in the running app ships until its date, then stops the next
+  build if it is neither fixed nor waived. Past the date, `scan` says `OVERDUE since <date>`.
+
 ## v0.26.1
 
 *Released 2026-10-28.*
