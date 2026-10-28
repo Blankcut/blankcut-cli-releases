@@ -22,6 +22,13 @@ so keep the heading bare regardless.
 
 ## Unreleased
 
+## v0.25.1
+
+*Released 2026-10-28.*
+
+- `blankcut promote --help` and `blankcut deprovision --help` say what each command does for your
+  app, and where to see what happens next.
+
 ## v0.25.0
 
 *Released 2026-10-28.*
