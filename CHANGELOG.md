@@ -22,6 +22,18 @@ so keep the heading bare regardless.
 
 ## Unreleased
 
+## v0.25.0
+
+*Released 2026-10-28.*
+
+- **`blankcut status` says what a waiting deploy needs from you.** Pending changes are listed in
+  plain terms: a deploy waiting on a secret names the key and the command that sets it, a first
+  deploy waiting on its first green build says so, and a change on the platform's side says there
+  is nothing for you to do.
+- After fixing a failed first build, push the fix: the next green build carries the deploy
+  through, without running `blankcut promote` again.
+- `blankcut promote --dry-run` lists the secrets the app reads and how to set any that are missing.
+
 ## v0.24.0
 
 *Released 2026-10-26.*
