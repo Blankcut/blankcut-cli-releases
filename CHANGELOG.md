@@ -22,6 +22,14 @@ so keep the heading bare regardless.
 
 ## Unreleased
 
+## v0.26.1
+
+*Released 2026-10-28.*
+
+- `blankcut validate` (and onboarding) now recognises an app whose `package.json`, `go.mod` or
+  Python manifest sits beside its `Dockerfile` in a subfolder, such as `client/`, instead of only
+  at the repository root. Such an app used to be held for manual review.
+
 ## v0.26.0
 
 *Released 2026-10-28.*
