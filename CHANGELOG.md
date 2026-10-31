@@ -22,6 +22,15 @@ so keep the heading bare regardless.
 
 ## Unreleased
 
+## v0.27.1
+
+*Released 2026-10-30.*
+
+- **`blankcut scan` lists what only the running app has.** A finding the daily re-scan found that
+  the last build doesn't have, usually a vulnerability published since that build, now shows its
+  package, the version to upgrade to, its CVE ids and its fix-by date, instead of only a count. A
+  finding in both is listed once, under the last build.
+
 ## v0.27.0
 
 *Released 2026-10-28.*
