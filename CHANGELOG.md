@@ -22,6 +22,20 @@ so keep the heading bare regardless.
 
 ## Unreleased
 
+## v0.28.0
+
+*Released 2026-11-08.*
+
+- **`blankcut promote --app` gives an app whose name differs from its repository its first
+  deploy.** That is an app connected with `blankcut onboard --name`, or a second app in a
+  repository that already builds another. Until now neither could be deployed from the CLI:
+  `promote --app` only rebuilt an image that was already deployed. For a second app, add its entry
+  to the repository's build matrix first (`image_name: <app>` and its `dockerfile`); `promote`
+  says what is missing until it is there, and `onboard` lists it as a step before `promote`. Its
+  secrets are the keys of a `.env.example` beside its Dockerfile when there is one, which
+  `blankcut secrets push` accepts, rather than every key of the repository's. Apps of a shared
+  repository that are already deployed are still rebuilt from the matrix, as before.
+
 ## v0.27.2
 
 *Released 2026-11-08.*
