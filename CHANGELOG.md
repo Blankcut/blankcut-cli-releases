@@ -22,6 +22,21 @@ so keep the heading bare regardless.
 
 ## Unreleased
 
+## v0.27.2
+
+*Released 2026-11-08.*
+
+- **`blankcut onboard` says what onboarding found, and what a second app needs.** It now prints the
+  onboarding job's notes. When the repository already builds another app, its last step is adding
+  the new app's entry to that build's matrix (the setup PR explains how), or asking Blank Cut,
+  instead of `blankcut promote`, which cannot deploy the app before its image builds. A
+  re-onboard that needed no setup PR no longer asks you to merge one.
+- **`blankcut promote --app` redeploys one app of a shared repository from the generated workflow
+  too.** It used to read only a hand-written `.github/workflows/build_and_push.yml`, so an app
+  added to the build matrix of the workflow Blank Cut generates, `build-and-push.yml`, could not
+  be redeployed. With both files committed it stops and says so rather than guess which one
+  builds the app.
+
 ## v0.27.1
 
 *Released 2026-10-30.*
