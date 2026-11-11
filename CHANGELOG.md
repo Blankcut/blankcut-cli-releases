@@ -22,6 +22,24 @@ so keep the heading bare regardless.
 
 ## Unreleased
 
+## v0.29.0
+
+*Released 2026-11-10.*
+
+- **The platform's guidance for coding agents is now in `AGENTS.md`, so Codex, Cursor and
+  Copilot read it too.** It used to be one block in `CLAUDE.md`, which only Claude Code reads.
+  Run `blankcut sync` in a repo to move it: the block goes to `AGENTS.md`, and `CLAUDE.md` keeps
+  everything you wrote in it plus a few lines that load `AGENTS.md` for Claude Code. Nothing
+  outside the `BLANKCUT PLATFORM` markers is changed. A repo that has not run `sync` gets the same
+  change as a pull request from the platform.
+- **The guidance is a third of the size it was, and the detail is a skill.** The always-loaded
+  block went from 48 KB to under 18 KB, small enough for every agent to read in full. The guides
+  for deploying, secrets, storage, scheduled jobs, browser-visible config, vulnerability findings,
+  domains and new projects moved into a `blankcut` skill (`.agents/skills/blankcut/`, and
+  `.claude/skills/blankcut/` for Claude Code), which an agent loads when a task needs one.
+  `blankcut sync` writes and refreshes it, and `blankcut sync --check` reports when any of it is
+  behind your CLI.
+
 ## v0.28.0
 
 *Released 2026-11-08.*
