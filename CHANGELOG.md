@@ -22,6 +22,21 @@ so keep the heading bare regardless.
 
 ## Unreleased
 
+## v0.29.1
+
+*Released 2026-11-12.*
+
+- **Add a site to a multi-site repository yourself, even one Blank Cut hosts for you.**
+  `blankcut onboard --name <app>` now registers a new app from a repository in Blank Cut's own
+  GitHub organization when every app already built from it is your organization's (before, only
+  the Blank Cut team could). Then `secrets push`, `promote --app` and `domains attach` take it
+  live on its own hostname. The `deploy` and `domains` guides (`blankcut sync`) have the steps.
+- **A subdomain of a domain your organization has on Blank Cut attaches with no DNS work and no
+  extra domain fee.** `blankcut domains attach site.example.com` uses `example.com`'s
+  certificate when it covers the name, so it goes live without waiting for a new one.
+- `blankcut onboard` no longer tells you to add a build-matrix entry for an app that already has
+  one.
+
 ## v0.29.0
 
 *Released 2026-11-10.*
